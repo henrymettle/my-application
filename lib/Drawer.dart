@@ -83,6 +83,7 @@ class MainDrawer extends StatelessWidget {
   );
   }
 }
+
 class REGISTRATION extends MaterialPageRoute<Null> {
   REGISTRATION()
       : super(builder: (BuildContext context) {
@@ -127,8 +128,16 @@ class ABOUT extends MaterialPageRoute<Null> {
         elevation: 5.0,
         centerTitle: true,
       ),
-      body: Center(
-        child: Text('About Us'),
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
+        child: Column(
+          children: <Widget>[
+            Text(
+              'Washing is an android application that allows you to wash your car at your comfort zone.'
+                  'We provide our services daily throughout the week .'
+            ),
+          ],
+        ),
       ),
     );
   });
